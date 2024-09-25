@@ -1,17 +1,14 @@
 {
-  "name": "maisoncorse",
+  "name": "maison-figari",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Site pour présenter la maison en Corse",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",      // Script pour démarrer l'application en local
+    "build": "echo 'No build necessary for this project'"  // Script fictif pour Vercel
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "ejs": "^3.1.10",
-    "express": "^4.21.0"
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
   }
 }
