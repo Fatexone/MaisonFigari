@@ -4,8 +4,8 @@
   "description": "Site pour présenter la maison en Corse",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",      // Script pour démarrer l'application en local
-    "build": "echo 'No build necessary for this project'"  // Script fictif pour Vercel
+    "start": "node app.js",      
+    "build": "echo 'No build necessary for this project'"  
   },
   "dependencies": {
     "express": "^4.17.1",
