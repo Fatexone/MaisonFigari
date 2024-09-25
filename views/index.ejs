@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Villa en Corse</title>
+
+  <!-- Importation des polices modernes de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Lien vers votre fichier CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Header avec titre principal -->
+  <header>
+    <h1>Découvrez notre villa à 6km de Figari</h1>
+  </header>
+
+  <!-- Slider pour les images de la villa -->
+  <section id="slider">
+    <div class="slider-container">
+      <img src="/img/photo1.jpg" class="slide">
+      <img src="/img/photo2.jpg" class="slide">
+      <img src="/img/photo3.jpg" class="slide">
+    </div>
+    <!-- Boutons pour naviguer dans le slider -->
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </section>
+
+  <!-- Section Description de la villa -->
+  <section id="description">
+    <h2>Un coin de paradis en Corse</h2>
+    <p>
+      Notre villa est située à seulement 6 km de Figari, dans un cadre magnifique entouré par la nature corse.
+      L'environnement est propice à des balades en raquette en hiver et à des activités nautiques l'été, offrant un
+      lieu de repos et d'aventure tout au long de l'année. L'histoire de cette maison est ancrée dans l'amour de
+      la nature, la tranquillité et les beaux paysages. Vous y trouverez une atmosphère chaleureuse, où le confort
+      moderne se mélange parfaitement à l'authenticité corse.
+    </p>
+  </section>
+
+  <!-- Section Activités disponibles -->
+  <section id="activities">
+    <h2>Activités disponibles</h2>
+    <ul>
+      <li>Balades en raquette en hiver</li>
+      <li>Randonnées dans les environs</li>
+      <li>Activités nautiques en été : voile, plongée, jet-ski</li>
+    </ul>
+  </section>
+
+  <!-- Section Vidéo de la villa avec une vidéo YouTube intégrée -->
+  <section id="video">
+    <h2>Vidéo de la villa</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wjUryf-UKTY" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Section Formulaire de contact -->
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="/contact" method="POST">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+
+     
+    </form>
+  </section>
+
+  <!-- Footer avec informations supplémentaires -->
+  <footer>
+    <p>Location de Villa en Corse - Contactez-nous pour plus d'informations.</p>
+  </footer>
+
+  <!-- Lien vers le fichier JavaScript pour le slider -->
+  <script src="/js/slider.js"></script>
+</body>
+</html>
