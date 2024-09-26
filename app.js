@@ -18,25 +18,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Route principale pour la page d'accueil
 app.get('/', (req, res) => {
   const videoUrl = 'https://www.youtube.com/embed/wjUryf-UKTY'; // Lien de la vidéo YouTube
-  res.render('index', { videoUrl });  // Rendre la vue "index.ejs" avec la vidéo
+  res.render('index', { videoUrl, title: 'Accueil' });  // Passer le titre
 });
 
 // Route pour la page des activités
-app.get('/activites', (_req, res) => {
-  res.render('activites');  // Rendre la vue "activites.ejs"
+app.get('/activites', (req, res) => {
+  res.render('activites', { title: 'Activités' });  // Passer le titre
 });
 
 // Route pour la page de l'environnement
-app.get('/environnement', (_req, res) => {
-  res.render('environnement');  // Rendre la vue "environnement.ejs"
+app.get('/environnement', (req, res) => {
+  res.render('environnement', { title: 'Environnement' });  // Passer le titre
+});
+
+// Route pour la page de contact
+app.get('/contact', (req, res) => {
+  res.render('contact', { title: 'Contact' });  // Passer le titre
 });
 
 // Route pour gérer la soumission du formulaire de contact
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
-  
+
   // Logique pour traiter les données du formulaire
-  // Par exemple, stocker dans une base de données ou envoyer un email
   console.log(`Message reçu de ${name} (${email}) : ${message}`);
   
   // Redirection après la soumission du formulaire
@@ -44,7 +48,7 @@ app.post('/contact', (req, res) => {
 });
 
 // Route pour désactiver la demande de favicon.ico
-app.get('/favicon.ico', (_req, res) => res.status(204));
+app.get('/favicon.ico', (req, res) => res.status(204));
 
 // Gestion des erreurs 404 (page non trouvée)
 app.use((req, res, next) => {

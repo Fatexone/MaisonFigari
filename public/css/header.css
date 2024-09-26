@@ -1,0 +1,49 @@
+/* Style du header */
+header {
+    background-color: #006400;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Style du menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #004d00;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espacement entre les éléments du menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Couleur au survol */
+}
+
+/* Style pour les liens actifs */
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00; /* Soulignement pour l'élément actif */
+}

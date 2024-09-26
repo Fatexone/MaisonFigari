@@ -1,0 +1,85 @@
+/* Style pour la section de contact */
+#contact {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments dans le formulaire */
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical; /* Permet de redimensionner verticalement */
+}
+
+/* Bouton "Envoyer" */
+button[type="submit"] {
+    max-width: 200px; /* Largeur maximale pour le bouton */
+    width: 100%; /* S'étend jusqu'à la largeur maximale */
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px auto; /* Centrage avec auto pour les marges gauche et droite */
+}
+
+button[type="submit"]:hover {
+    background-color: #004d00;
+}
+
+/* Style du footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

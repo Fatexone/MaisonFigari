@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Location de Villa en Corse</title>
+  <title><%= title %></title>
 
   <!-- Importation des polices modernes de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Lien vers votre fichier CSS -->
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
 
-  <!-- Header avec titre principal -->
-  <header>
-    <h1>Découvrez notre villa à 6km de Figari</h1>
-  </header>
+  <!-- Inclusion du header -->
+  <%- include('header') %>
 
   <!-- Slider pour les images de la villa -->
   <section id="slider">
     <div class="slider-container">
-      <img src="/img/photo1.jpg" class="slide">
-      <img src="/img/photo2.jpg" class="slide">
-      <img src="/img/photo3.jpg" class="slide">
+      <img src="/img/photo1.jpg" class="slide" alt="Image de la villa 1">
+      <img src="/img/photo2.jpg" class="slide" alt="Image de la villa 2">
+      <img src="/img/photo3.jpg" class="slide" alt="Image de la villa 3">
     </div>
     <!-- Boutons pour naviguer dans le slider -->
     <button class="prev">❮</button>
@@ -32,23 +31,24 @@
 
   <!-- Section Description de la villa -->
   <section id="description">
-    <h2>Un coin de paradis en Corse</h2>
+    <h2>Un coin de paradis pour la remise en forme en Corse</h2>
     <p>
-      Notre villa est située à seulement 6 km de Figari, dans un cadre magnifique entouré par la nature corse.
-      L'environnement est propice à des balades en raquette en hiver et à des activités nautiques l'été, offrant un
-      lieu de repos et d'aventure tout au long de l'année. L'histoire de cette maison est ancrée dans l'amour de
-      la nature, la tranquillité et les beaux paysages. Vous y trouverez une atmosphère chaleureuse, où le confort
-      moderne se mélange parfaitement à l'authenticité corse.
+      Je suis <strong>Laura</strong>, et j'organise des <strong>stages de remise en forme</strong> et de <strong>détox</strong> dans un cadre exceptionnel en Corse, à seulement 6 km de Figari. Vous découvrirez un environnement idéal pour vous ressourcer et retrouver votre bien-être. Entouré par la nature sauvage, cet endroit vous offre une <strong>atmosphère apaisante</strong>, propice à la détente et au recentrage.
+    </p>
+    <p>
+      Lors de nos stages, vous aurez l'occasion de profiter d'activités pour harmoniser le corps et l'esprit, telles que le <strong>rééquilibrage alimentaire</strong>, l'<strong>aqua yoga</strong>, le <strong>yoga</strong>, et des moments de détente sur la <strong>plage</strong>. Des balades guidées à travers les <strong>sentiers</strong> environnants vous permettront également de vous reconnecter à la nature.
     </p>
   </section>
 
   <!-- Section Activités disponibles -->
   <section id="activities">
-    <h2>Activités disponibles</h2>
+    <h2>Activités proposées lors de nos stages</h2>
     <ul>
-      <li>Balades en raquette en hiver</li>
-      <li>Randonnées dans les environs</li>
-      <li>Activités nautiques en été : voile, plongée, jet-ski</li>
+      <li><strong>Rééquilibrage alimentaire</strong> : Apprenez à réadapter vos habitudes alimentaires pour retrouver l'équilibre.</li>
+      <li><strong>Aqua yoga</strong> : Des séances de yoga dans l'eau, combinant relaxation et mouvement fluide.</li>
+      <li><strong>Yoga</strong> : Des cours de yoga pour tous niveaux, en extérieur dans un cadre naturel magnifique.</li>
+      <li><strong>Plage</strong> : Moments de détente sur la plage, baignades et relaxation.</li>
+      <li><strong>Balades dans les sentiers</strong> : Randonnées dans la nature environnante pour explorer les magnifiques paysages corses.</li>
     </ul>
   </section>
 
@@ -56,35 +56,20 @@
   <section id="video">
     <h2>Vidéo de la villa</h2>
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wjUryf-UKTY" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-              gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bWyuddoSUkM?si=3hLlm6FeQ-mA-PSE" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen></iframe>
     </div>
-  </section>
-
-  <!-- Section Formulaire de contact -->
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <form action="/contact" method="POST">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" required></textarea>
-
-     
-    </form>
   </section>
 
   <!-- Footer avec informations supplémentaires -->
   <footer>
-    <p>Location de Villa en Corse - Contactez-nous pour plus d'informations.</p>
+    <p>&copy; 2024 Villa en Corse - Contactez-nous pour plus d'informations.</p>
   </footer>
 
   <!-- Lien vers le fichier JavaScript pour le slider -->
-  <script src="/js/slider.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
