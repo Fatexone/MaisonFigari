@@ -6,49 +6,6 @@ body {
     padding: 0;
 }
 
-/* Style pour le slider */
-#slider {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-.slider-container {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    height: auto;
-    transition: opacity 1.5s ease-in-out;
-}
-
-/* Boutons du slider */
-button {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transform: translateY(-50%);
-    font-size: 18px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-
-
 /* Titres de section */
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -61,31 +18,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Style pour la section vidéo */
-#video {
-    text-align: center;
-    margin: 20px;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
 /* Style du footer */
 footer {
     text-align: center;
@@ -93,14 +25,6 @@ footer {
     background-color: #f1f1f1;
     color: #333;
     margin-top: 20px;
-}
-
-/* Style pour les images dans le slider */
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Responsivité pour les petits écrans */

@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Villa de luxe à Ramatuelle, à côté de Saint-Tropez, disponible à la location avec des services exclusifs proposés par Sébastien Jondeau.">
+  <meta property="og:title" content="Villa de luxe à Ramatuelle - Proche de Saint-Tropez">
+  <meta property="og:description" content="Louez la villa de Sébastien Jondeau à Ramatuelle, profitez de services personnalisés, d'activités nautiques et d'un accès privilégié aux lieux exclusifs de Saint-Tropez.">
+  <meta property="og:image" content="/img/photo1.jpg">
+  
   <title><%= title %></title>
 
   <!-- Importation des polices modernes de Google Fonts -->
@@ -10,7 +15,7 @@
 
   <!-- Lien vers votre fichier CSS -->
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/index.css"> <!-- Ajout d'un fichier CSS spécifique à l'index -->
 </head>
 <body>
 
@@ -20,43 +25,42 @@
   <!-- Slider pour les images de la villa -->
   <section id="slider">
     <div class="slider-container">
-      <img src="/img/photo1.jpg" class="slide" alt="Image de la villa 1">
+      <img src="/img/photo1.jpg" class="slide active" alt="Image de la villa 1">
       <img src="/img/photo2.jpg" class="slide" alt="Image de la villa 2">
       <img src="/img/photo3.jpg" class="slide" alt="Image de la villa 3">
     </div>
-    <!-- Boutons pour naviguer dans le slider -->
-    <button class="prev">❮</button>
-    <button class="next">❯</button>
+    <!-- Boutons pour naviguer dans le slider avec accessibilité -->
+    <button class="prev" aria-label="Slide précédent">❮</button>
+    <button class="next" aria-label="Slide suivant">❯</button>
   </section>
 
-  <!-- Section Description de la villa -->
-  <section id="description">
-    <h2>Un coin de paradis pour la remise en forme en Corse</h2>
+  <section class="text-container">
+    <h2>Un coin de paradis à Ramatuelle, près de Saint-Tropez</h2>
     <p>
-      Je suis <strong>Laura</strong>, et j'organise des <strong>stages de remise en forme</strong> et de <strong>détox</strong> dans un cadre exceptionnel en Corse, à seulement 6 km de Figari. Vous découvrirez un environnement idéal pour vous ressourcer et retrouver votre bien-être. Entouré par la nature sauvage, cet endroit vous offre une <strong>atmosphère apaisante</strong>, propice à la détente et au recentrage.
+      Découvrez la villa de Sébastien Jondeau, située à Ramatuelle, un cadre idyllique à proximité de Saint-Tropez. Cette villa de luxe, gérée par l'ancien garde du corps et gestionnaire de Karl Lagerfeld, est un lieu unique pour passer des vacances inoubliables. Entourée de paysages magnifiques, la villa offre un cadre de rêve pour des moments de détente ou d'aventure.
     </p>
     <p>
-      Lors de nos stages, vous aurez l'occasion de profiter d'activités pour harmoniser le corps et l'esprit, telles que le <strong>rééquilibrage alimentaire</strong>, l'<strong>aqua yoga</strong>, le <strong>yoga</strong>, et des moments de détente sur la <strong>plage</strong>. Des balades guidées à travers les <strong>sentiers</strong> environnants vous permettront également de vous reconnecter à la nature.
+      Sébastien Jondeau ne se contente pas de vous louer sa maison : il vous propose également ses services exclusifs, que ce soit pour organiser des soirées mémorables, des activités sportives ou nautiques, avec accès à ses jouets de navigation tels que des jets-skis et des paddles électriques.
     </p>
   </section>
-
-  <!-- Section Activités disponibles -->
-  <section id="activities">
-    <h2>Activités proposées lors de nos stages</h2>
-    <ul>
-      <li><strong>Rééquilibrage alimentaire</strong> : Apprenez à réadapter vos habitudes alimentaires pour retrouver l'équilibre.</li>
-      <li><strong>Aqua yoga</strong> : Des séances de yoga dans l'eau, combinant relaxation et mouvement fluide.</li>
-      <li><strong>Yoga</strong> : Des cours de yoga pour tous niveaux, en extérieur dans un cadre naturel magnifique.</li>
-      <li><strong>Plage</strong> : Moments de détente sur la plage, baignades et relaxation.</li>
-      <li><strong>Balades dans les sentiers</strong> : Randonnées dans la nature environnante pour explorer les magnifiques paysages corses.</li>
+  
+  <section class="text-container">
+    <h2>Expériences exclusives à Saint-Tropez</h2>
+    <ul class="activity-list">
+      <li>Soirées privées : Laissez Sébastien Jondeau organiser des événements inoubliables dans des lieux prestigieux de Saint-Tropez.</li>
+      <li>Sports nautiques : Profitez de l'accès aux équipements privés de Sébastien pour une aventure en mer, que ce soit en jet-ski ou en paddle électrique.</li>
+      <li>Activités sportives : Des séances personnalisées de remise en forme en plein air, adaptées à vos besoins.</li>
+      <li>Randonnées exclusives : Accompagné par Sébastien Jondeau lui-même, partez à la découverte des sentiers cachés autour de Ramatuelle et Saint-Tropez. Il saura vous guider vers des points de vue panoramiques incroyables et des chemins hors des sentiers battus.</li>
+      <li>Accès privilégié : Sébastien peut vous introduire aux lieux les plus prisés de Saint-Tropez pour une expérience VIP inédite.</li>
     </ul>
   </section>
-
+  
+  
   <!-- Section Vidéo de la villa avec une vidéo YouTube intégrée -->
   <section id="video">
     <h2>Vidéo de la villa</h2>
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bWyuddoSUkM?si=3hLlm6FeQ-mA-PSE" 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wjUryf-UKTY" 
               title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               referrerpolicy="strict-origin-when-cross-origin" 
@@ -64,9 +68,8 @@
     </div>
   </section>
 
-  <!-- Footer avec informations supplémentaires -->
   <footer>
-    <p>&copy; 2024 Villa en Corse - Contactez-nous pour plus d'informations.</p>
+    <p>&copy; 2024 Villa à Ramatuelle - Contactez-nous pour plus d'informations sur la location.</p>
   </footer>
 
   <!-- Lien vers le fichier JavaScript pour le slider -->

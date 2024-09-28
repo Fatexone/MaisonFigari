@@ -1,15 +1,16 @@
 {
-  "name": "maison-corse",
+  "name": "villa-seb",
   "version": "1.0.0",
   "description": "Site pour la maison en Corse",
   "main": "app.js",
+  "type": "module",  
   "scripts": {
-    "start": "node app.js",  
-    "build": "echo 'No build necessary for this project'"  
+    "start": "node app.js",
+    "build": "echo 'No build necessary for this project'"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
-    "body-parser": "^1.19.0"
+    "express": "^4.17.1"
   }
 }

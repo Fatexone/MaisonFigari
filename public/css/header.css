@@ -13,7 +13,7 @@ header h1 {
     margin: 0;
 }
 
-/* Style du menu */
+/* Style du menu pour les écrans larges */
 nav {
     display: flex;
     justify-content: center;
@@ -46,4 +46,38 @@ nav ul li a:hover {
 nav ul li a.active {
     font-weight: bold;
     border-bottom: 2px solid #ffcc00; /* Soulignement pour l'élément actif */
+}
+
+/* Media queries pour rendre le menu responsive sur les petits écrans */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column; /* Le menu devient vertical */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacement vertical entre les éléments du menu */
+    }
+
+    nav ul li a {
+        font-size: 1.5em; /* Agrandissement des liens pour les petits écrans */
+    }
+
+    header h1 {
+        font-size: 2em; /* Ajustement de la taille du titre */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Réduction de la taille du titre sur les très petits écrans */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Réduction de la taille des liens pour les très petits écrans */
+    }
 }
